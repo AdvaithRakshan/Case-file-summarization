@@ -36,7 +36,6 @@ def pdf_to_ocr(input_pdf, output_folder, lang="eng"):
     print(f"All pages saved in {output_folder}")
 
 
-
 if __name__ == "__main__":
     input_pdf = "input2.pdf"                # replace with your file
     output_folder = "ocr_output"           # folder to save page texts
