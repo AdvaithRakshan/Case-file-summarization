@@ -1,4 +1,2 @@
-re
-os
 transformers
 torch
