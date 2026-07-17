@@ -1,6 +1,7 @@
 import os
 import re
 
+
 def is_bad_text(text: str) -> bool:
     """
     Heuristic check for bad OCR text.
@@ -16,6 +17,7 @@ def is_bad_text(text: str) -> bool:
     if any(bad in text for bad in ["«", "©", "ae", "~~", "SE io"]):
         return True
     return False
+
 
 def combine_txt_files(input_folder="ocr_output", output_file="input.txt"):
     all_text = []
@@ -39,6 +41,7 @@ def combine_txt_files(input_folder="ocr_output", output_file="input.txt"):
         f.write(combined_text)
 
     print(f"\nCombined {len(all_text)} clean pages into {output_file}")
+
 
 # ------------------ Run ------------------
 if __name__ == "__main__":
