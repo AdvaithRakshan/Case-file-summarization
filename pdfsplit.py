@@ -7,6 +7,7 @@ import pytesseract
 # if tesseract is not in PATH, set its path here (for Windows)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
+
 def pdf_to_ocr(input_pdf, output_folder, lang="eng"):
     # make output folder if not exists
     os.makedirs(output_folder, exist_ok=True)
@@ -33,6 +34,7 @@ def pdf_to_ocr(input_pdf, output_folder, lang="eng"):
 
     doc.close()
     print(f"All pages saved in {output_folder}")
+
 
 
 if __name__ == "__main__":
