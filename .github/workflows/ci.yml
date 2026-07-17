@@ -21,9 +21,13 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install pytest flake8
+          
+      - name: Download NLTK data
+        run: python -m nltk.downloader punkt punkt_tab
 
       - name: Lint with flake8
         run: flake8 . --count --show-source --statistics
 
       - name: Run tests
         run: pytest
+        
