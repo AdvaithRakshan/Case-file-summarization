@@ -20,6 +20,8 @@ if model.config.decoder_start_token_id is None:
 # ---------------------------
 # Sentence-based chunking function
 # ---------------------------
+
+
 def chunk_text_by_sentences(text, max_sentences=15):
     """
     Splits text into chunks of sentences for summarization.
@@ -31,6 +33,8 @@ def chunk_text_by_sentences(text, max_sentences=15):
 # ---------------------------
 # Generative factual summarization function
 # ---------------------------
+
+
 def summarize_text(text, section_name="Section"):
     """
     Generates a factual summary of legal text using the model.
@@ -86,6 +90,8 @@ def summarize_text(text, section_name="Section"):
 # ---------------------------
 # Main Execution
 # ---------------------------
+
+
 if __name__ == "__main__":
     with open("input2.txt", "r", encoding="utf-8") as f:
         case_text = f.read()
