@@ -1,4 +1,3 @@
-import os
 import re
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import nltk
